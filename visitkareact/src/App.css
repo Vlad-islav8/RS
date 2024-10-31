@@ -1,0 +1,21 @@
+body {
+    color: #fff
+}
+
+.wrapper {
+
+    position: relative;
+    background-color: #303030;;
+    display: grid;
+    grid-template-areas: 
+    "h h"
+    'n m';
+    grid-template-rows: auto 1fr ;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 8px
+}
+
+
+
+
+

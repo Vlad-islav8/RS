@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.output {
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.output textarea {
+    max-width: 360px;
+    min-width: 360px;
+
+    max-height: 48px;
+}
+
+.inputHead {
+    height: 100%;
+}

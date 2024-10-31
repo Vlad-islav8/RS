@@ -1,0 +1,9 @@
+.dialog__content {
+    background-color: #bbbbbb;
+    grid-area: m;
+    color: #222;
+}
+.ithem {
+    color: red;
+    font-size: 30px;
+}

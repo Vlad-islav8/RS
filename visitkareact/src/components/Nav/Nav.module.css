@@ -1,0 +1,50 @@
+.nav {
+    background-color: #222222;
+    grid-area: n;
+}
+
+.nav ul {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+}
+
+
+
+.ithem {
+
+    display: inline-block;
+    background-color: #4d4d4d;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius:  0 10px 10px 0 ;
+    border: 1px rgb(95, 95, 95) solid;
+    border-right: none;
+    transition: all .2s ease-in-out;
+}
+
+
+.ithem:hover {
+    transform: scale(1.03);
+    border-radius: 0;
+}
+
+.ithem a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.link {
+
+    text-decoration: none;
+}
+
+.ithem a.active {
+    transition: all .25s;
+    color: #ececec;
+    font-weight: bold;
+}
