@@ -1,18 +1,22 @@
 import React from 'react';
-import Poststyle from'./Post.module.css'
-
+import style from './Post.module.css'
 
 
 function Post(props) {
 
     return (
-      <div className={Poststyle.post}>
-        <h2>Привет, я {props.name}</h2>
-        <p>и я {props.info}</p>
-        <i>{Date()}</i>
-        
-      </div>
+        <div className={style.item}>
+            <div className={style.info}>
+                <a href='/dialogs' className={style.header}>
+                    <img src={props.ava}/>
+                        <h2>{props.name}</h2>
+                </a>
+                <h3>{props.headInfo}</h3>
+                <p>{props.info}</p>
+            </div>
+            <i>{Date()}</i>
+        </div>
     )
-}
+    }
 
-export default Post;
+    export default Post;

@@ -8,20 +8,22 @@ let users = {
   age: 17
 }
 
-function Mypost() {
+function Mypost(props) {
+
+
+
+    let newPostsData = props.users.map((el) => {
+        return (
+            <Post ava={el.ava} name={el.name} info={el.info} HeadInfo={el.headInfo}/>
+        )
+    })
+
+
     return (
         <div className={styles.ithem}>
           <Createpost />
-          <Post name='Vlad Islav' info='Frontend'/>
-         
-          <Post name='Nastya' info='Пися'/>
-          <Post name='Vlad Islav' info='Frontend'/>
-         
-          <Post name='Nastya' info='Пися'/><Post name='Vlad Islav' info='Frontend'/>
-         
-         <Post name='Nastya' info='Пися'/><Post name='Vlad Islav' info='Frontend'/>
-         
-         <Post name='Nastya' info='Пися'/>
+            {newPostsData}
+
         </div> 
     )
 }

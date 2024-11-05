@@ -1,0 +1,58 @@
+.ithem {
+    border: 1px solid #8c8c8c;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.ithem h2 {
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+}
+
+.ithem p {
+    height: 75vh;
+    border-radius:0 0 10px 10px ;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 70%);
+    color: #353535;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #575757;
+    padding: 16px;
+}
+
+.head a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    transition: all .3s;
+}
+
+.head a h2{
+    transition: all .3s;
+}
+
+.head a h2:hover {
+
+    color: #bbbbbb;
+}
+
+.head img {
+    opacity: .8;
+    clip-path: circle(50%);
+    width: 72px;
+    height: 72px;
+    transition: all .3s;
+
+}
+
+.head img:hover{
+    opacity: 1;
+    clip-path: circle(51%);
+
+}
